@@ -9,7 +9,7 @@ import sklearn
 
 
 app = Flask(__name__)
-model = pickle.load(open('C:/Users/user/Desktop/ds1/rental_house_pred.pkl','rb'))
+model = pickle.load(open('rental_house_pred.pkl','rb'))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('rental_house.html')
